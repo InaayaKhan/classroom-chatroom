@@ -1,28 +1,33 @@
 # Classroom Chatroom
 
-Instructions for how to setup:
+A chat platform for university classes with separate logins for students and teachers. Each subject has its own chatroom, and all messages are logged.
 
-1. Install XAMPP
-2. In XAMPP control panel,
-	Start Apache
-	Start MySQL
+**Tech:** PHP, MySQL, Bootstrap, HTML/CSS
 
-xampp folder will be created in C drive
-now extract pbl_project.zip in 
-C:\xampp\htdocs\
-	
+**Context:** DBMS course project at the University of Mumbai, built independently.
 
-Back to the XAMPP Control Panel
-	Click on Admin (of the MySQL section)
-	This will open phpmyadmin in your default browser
+| Landing page | Subject classrooms | Chatroom |
+|---|---|---|
+| ![Landing page](screenshots/landing.png) | ![Subject classrooms](screenshots/subjects.png) | ![Chatroom](screenshots/chatroom.png) |
 
-3. On Left hand side, click on 'new'
-	to create a new database
-4. Name the database 'college_classroom' and 
-	select collation from the dropdown list next to it 'latin1_swedish_ci'
-5. In the upper section, there is an option of import
- Follow this path and import this file
-C:\xampp\htdocs\pbl_project\database\college_classroom.sql
+## Features
 
-Now go to
-http://localhost/pbl_project/
+- Separate registration and login for students and teachers
+- Pages for adding new students and teachers
+- Subject-based chatrooms with message history
+
+## Database design
+
+Initial enhanced entity-relationship diagram (EERD) for the system:
+
+![Database design](screenshots/database-design.png)
+
+## Setup
+
+1. Install [XAMPP](https://www.apachefriends.org) and start **Apache** and **MySQL** in the XAMPP Control Panel.
+2. Copy the `Project` folder to `C:\xampp\htdocs\` and rename it to `pbl_project`.
+3. Open phpMyAdmin (**Admin** next to MySQL), create a database named `college_classroom` with collation `latin1_swedish_ci`.
+4. Import `Project/database/college_classroom.sql` into that database.
+5. Open [http://localhost/pbl_project/](http://localhost/pbl_project/).
+
+A project presentation is included as `Project Presentation.pptx`.
