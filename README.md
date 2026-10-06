@@ -20,7 +20,9 @@ A chat platform for university classes with separate logins for students and tea
 
 Initial enhanced entity-relationship diagram (EERD) for the system:
 
-<a href="screenshots/database-design.png"><img src="screenshots/database-design.png" alt="Database design (EERD)" width="600"></a>
+<p align="center">
+  <a href="screenshots/database-design.png"><img src="screenshots/database-design.png" alt="Database design (EERD)" width="700"></a>
+</p>
 
 ## Setup
 
